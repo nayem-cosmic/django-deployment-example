@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Home</title>
+  </head>
+</html>
+
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+{% block body_block %}
+  <h1>Welcome to home!</h1>
+  <h3>{{ text|my_cut:'hello' }}</h3>
+  <h3>{{ number|add:11 }}</h3>
+{% endblock %}
